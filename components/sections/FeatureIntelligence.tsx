@@ -27,8 +27,13 @@ export function FeatureIntelligence() {
           </div>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="text-eyebrow text-brand-orange">Insights &amp; wearables</p>
-          <h2 id="ai-h" className="text-display text-h2 mt-3">
+          <div className="flex items-center gap-3">
+            <span className="rounded-md border border-brand-orange/40 px-2 py-0.5 text-xs font-bold text-brand-orange">
+              05
+            </span>
+            <p className="text-eyebrow text-brand-orange">Insights &amp; wearables</p>
+          </div>
+          <h2 id="ai-h" className="text-display text-h2 mt-4">
             Your camp, <span className="text-brand-orange">quantified.</span>
           </h2>
           <p className="mt-5 max-w-lg text-lg text-ink-muted">

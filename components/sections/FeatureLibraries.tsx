@@ -17,9 +17,14 @@ export function FeatureLibraries() {
     <SectionShell id="nutrition" labelledBy="lib-h" glow>
       <div className="grid items-start gap-12 lg:grid-cols-2">
         <Reveal>
-          <p className="text-eyebrow text-brand-orange">Workouts &amp; nutrition</p>
-          <h2 id="lib-h" className="text-display text-h2 mt-3">
-            Train smarter, <span className="text-brand-orange">fuel better.</span>
+          <div className="flex items-center gap-3">
+            <span className="rounded-md border border-brand-orange/40 px-2 py-0.5 text-xs font-bold text-brand-orange">
+              04
+            </span>
+            <p className="text-eyebrow text-brand-orange">Workouts &amp; nutrition</p>
+          </div>
+          <h2 id="lib-h" className="text-display text-h2 mt-4">
+            Train smarter, <span className="text-brand-orange">fuel&nbsp;better.</span>
           </h2>
           <p className="mt-5 max-w-lg text-lg text-ink-muted">
             A complete library of fight-sport workouts paired with macro plans

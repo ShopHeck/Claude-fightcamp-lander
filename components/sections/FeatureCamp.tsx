@@ -16,9 +16,15 @@ export function FeatureCamp() {
     <SectionShell id="camp" labelledBy="camp-h">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <Reveal>
-          <p className="text-eyebrow text-brand-orange">Camp dashboard</p>
-          <h2 id="camp-h" className="text-display text-h2 mt-3">
-            Peak at the <span className="text-brand-orange">right time.</span>
+          <div className="flex items-center gap-3">
+            <span className="rounded-md border border-brand-orange/40 px-2 py-0.5 text-xs font-bold text-brand-orange">
+              01
+            </span>
+            <p className="text-eyebrow text-brand-orange !text-brand-orange">Camp dashboard</p>
+          </div>
+          <h2 id="camp-h" className="text-display text-h2 mt-4">
+            Peak at the{" "}
+            <span className="text-brand-orange">right&nbsp;time.</span>
           </h2>
           <p className="mt-5 max-w-lg text-lg text-ink-muted">
             One screen tells you exactly where you are in camp, what's next,

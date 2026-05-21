@@ -19,7 +19,7 @@ export function Hero() {
     <section
       id="top"
       ref={ref}
-      className="relative isolate overflow-hidden pt-32 pb-24 sm:pt-36 sm:pb-32"
+      className="relative isolate overflow-hidden pt-28 pb-20 sm:pt-32 sm:pb-24"
     >
       {/* radial glow */}
       <div
@@ -44,11 +44,16 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="text-eyebrow text-brand-orange">
-              <span className="text-brand-orange">FIGHT CAMP</span>{" "}
-              <span className="text-ink-muted">· MMA TRAINING APP</span>
-            </p>
-            <h1 className="text-display text-hero mt-4">
+            <div className="flex items-center gap-2 rounded-full border border-brand-orange/30 bg-brand-orange/5 px-3 py-1 w-fit">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-orange opacity-60" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-orange" />
+              </span>
+              <span className="text-xs font-semibold tracking-wider text-brand-orange">
+                EARLY ACCESS · WAITLIST OPEN
+              </span>
+            </div>
+            <h1 className="text-display text-hero mt-5">
               Train.
               <br />
               Track.

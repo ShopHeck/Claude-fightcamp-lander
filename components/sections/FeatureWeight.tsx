@@ -16,8 +16,13 @@ export function FeatureWeight() {
     <SectionShell id="weight" labelledBy="weight-h">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <Reveal>
-          <p className="text-eyebrow text-brand-orange">Weight cut</p>
-          <h2 id="weight-h" className="text-display text-h2 mt-3">
+          <div className="flex items-center gap-3">
+            <span className="rounded-md border border-brand-orange/40 px-2 py-0.5 text-xs font-bold text-brand-orange">
+              03
+            </span>
+            <p className="text-eyebrow text-brand-orange">Weight cut</p>
+          </div>
+          <h2 id="weight-h" className="text-display text-h2 mt-4">
             Cut with <span className="text-brand-orange">confidence.</span>
           </h2>
           <p className="mt-5 max-w-lg text-lg text-ink-muted">

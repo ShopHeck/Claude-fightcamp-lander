@@ -17,7 +17,7 @@ export function SectionShell({
     <section
       id={id}
       aria-labelledby={labelledBy}
-      className={`relative py-24 sm:py-32 ${className}`}
+      className={`relative scroll-mt-20 py-20 sm:py-24 ${className}`}
     >
       {glow ? (
         <div
