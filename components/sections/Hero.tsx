@@ -5,6 +5,8 @@ import { Star } from "lucide-react";
 import { PhoneFrame } from "../ui/PhoneFrame";
 import { HomeScreen } from "../mockups/HomeScreen";
 import { WaitlistForm } from "../ui/WaitlistForm";
+import { EmberField } from "../ui/EmberField";
+import { SignupTicker } from "../ui/SignupTicker";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -26,6 +28,8 @@ export function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-radial-orange opacity-70"
       />
+      {/* ember particle layer */}
+      <EmberField count={50} />
       {/* diag lines */}
       <div
         aria-hidden="true"
@@ -80,7 +84,16 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-ink-muted"
+            className="mt-6"
+          >
+            <SignupTicker />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.45 }}
+            className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-ink-muted"
           >
             <div className="flex items-center gap-1.5">
               {[0, 1, 2, 3, 4].map((i) => (
@@ -94,7 +107,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 animate-pulseGlow rounded-full bg-brand-orange" />
-              Built for boxing, MMA, Muay Thai, kickboxing &amp; BJJ
+              Boxing · MMA · Muay Thai · Kickboxing · BJJ
             </div>
           </motion.div>
         </div>
