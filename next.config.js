@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  caching: {
+    // Disable cache for Cloudflare Pages
+    staticRegeneratedTTL: 0,
+  },
   onDemandEntries: {
-    maxInactiveAge: 15 * 1000,
-    pagesBufferLength: 2,
+    maxInactiveAge: 0,
+    pagesBufferLength: 0,
+  },
+  experimental: {
+    // Disable build cache
+    disableStaticImages: false,
   },
 };
 
